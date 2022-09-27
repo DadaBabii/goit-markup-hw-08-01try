@@ -1,21 +1,20 @@
-.benefits-section {
-    padding-top: var(--padding94);   
-    padding-bottom: var(--padding94);
-}
 
-.benefits-list {
-    display: flex;
-    
+
+
+
+.benefits-section {
+    padding-top: var(--padding-mobile);   
+    padding-bottom: var(--padding-mobile);
 }
 
 .benefits-list__item {
-    width: 270px;
+    width: 450px;
 
-    +.benefits-list__item {
-        margin-left: 30px;
-    
+&:not(:last-child) {
+        margin-bottom: 30px;
     }
-}
+
+  }
 
 
 
@@ -35,13 +34,117 @@
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: calc(16/14);
     text-transform: uppercase;
+    text-align: center;
 
 }
 
 .benefits-list__text {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: calc(24/14);
     color: var(--light-text-color);
+
+ 
 }
+
+
+@media screen and (min-width: 768px) {
+
+.benefits-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--margin30));
+        margin-bottom: calc(-1 * var(--margin30));
+
+    }
+
+.benefits-list__item {
+         
+        flex-basis: calc(100% / 2 - var(--margin30));
+            margin-left: var(--margin30);
+            margin-bottom: var(--margin30);
+
+ 
+    }
+.benefits-list__header {
+    text-align: start;
+}
+     
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .benefits-section {
+                padding-top: var(--padding94);
+                padding-bottom: var(--padding94);
+            }
+
+        .benefits-list {
+            display: flex;
+            flex-wrap: nowrap;
+    
+        }
+
+
+        .benefits-list__item {
+                width: 270px;
+
+                +.benefits-list__item {
+                    margin-left: 30px;
+
+                }
+            }
+}
+
+
+
+
+// .benefits-section {
+//     padding-top: var(--padding94);
+//     padding-bottom: var(--padding94);
+// }
+
+// .benefits-list {
+//     display: flex;
+
+// }
+
+// .benefits-list__item {
+//     width: 270px;
+
+//     +.benefits-list__item {
+//         margin-left: 30px;
+
+//     }
+// }
+
+
+
+// .grey-box {
+//     display: flex;
+//     margin-bottom: 30px;
+//     background-color: var(--light-bcg-color);
+//     height: 120px;
+//     justify-content: center;
+//     align-items: center;
+
+// }
+
+
+// .benefits-list__header {
+//     margin-bottom: 10px;
+
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+
+// }
+
+// .benefits-list__text {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     color: var(--light-text-color);
+// }

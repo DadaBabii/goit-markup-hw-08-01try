@@ -1,0 +1,36 @@
+.clients-section {
+    padding-top: var(--padding94);
+    padding-bottom: var(--padding94);
+}
+
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+
+}
+
+.clients-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: var(--main-light-color);
+    fill: #AFB1B8;
+
+    transition: border-color var(--time-transition) var(--line-transition), fill var(--time-transition) var(--line-transition);
+
+&:hover,
+&:focus {
+    border-color: var(--secondary-text-color);
+    fill: var(--secondary-text-color);
+
+        }
+}
+
+
+

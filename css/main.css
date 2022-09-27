@@ -97,10 +97,17 @@ a {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   text-align: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .headers {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -768,6 +775,11 @@ a {
     margin-left: 30px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .directions-section {
+    display: none;
+  }
+}
 .card-set {
   display: flex;
   justify-content: center;
@@ -817,20 +829,13 @@ a {
 }
 
 .team-section {
-  padding-top: var(--padding94);
-  padding-bottom: var(--padding94);
+  padding-top: var(--padding-mobile);
+  padding-bottom: var(--padding-mobile);
   background-color: var(--light-bcg-color);
 }
 
-.team-list {
-  display: flex;
-  margin-left: calc(-1 * var(--margin30));
-  margin-bottom: calc(-1 * var(--margin30));
-}
-
 .team-list__item {
-  flex-basis: calc(25% - var(--margin30));
-  margin-left: var(--margin30);
+  width: 450px;
   margin-bottom: var(--margin30);
 }
 
@@ -849,26 +854,13 @@ a {
   overflow: hidden;
 }
 
-.team-list__header {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-}
-
-.team-list__text {
-  color: var(--light-text-color);
-  font-size: 16px;
-  line-height: 1.19;
-}
-
 .social-list {
   background-color: var(--main-light-color);
   display: flex;
   justify-content: center;
   column-gap: 10px;
   padding-top: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .social-list__link {
@@ -887,22 +879,66 @@ a {
   fill: var(--main-light-color);
 }
 
-.clients-section {
-  padding-top: var(--padding94);
-  padding-bottom: var(--padding94);
+.team-list__header {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
 }
 
-.clients-list {
-  display: flex;
-  justify-content: center;
-  column-gap: 30px;
+.team-list__text {
+  color: var(--light-text-color);
+  font-size: 16px;
+  line-height: 1.1875;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--margin30));
+    margin-bottom: calc(-1 * var(--margin30));
+  }
+  .team-list__item {
+    flex-basis: calc(50% - var(--margin30));
+    margin-left: var(--margin30);
+    margin-bottom: var(--margin30);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: var(--padding94);
+    padding-bottom: var(--padding94);
+    background-color: var(--light-bcg-color);
+  }
+  .team-list {
+    flex-wrap: nowrap;
+  }
+  .team-list__item {
+    flex-basis: calc(25% - var(--margin30));
+  }
+  .social-list {
+    background-color: var(--main-light-color);
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .social-list {
+    padding-bottom: 30px;
+  }
+}
+.clients-section {
+  padding-top: var(--padding-mobile);
+  padding-bottom: var(--padding-mobile);
 }
 
 .clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -915,6 +951,56 @@ a {
   fill: var(--secondary-text-color);
 }
 
+@media screen and (max-width: 767) {
+  .clients-list__item {
+    flex-basis: calc(50% - var(--margin30));
+    margin-left: var(--margin30);
+    margin-bottom: var(--margin30);
+  }
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--margin30));
+    margin-bottom: calc(-1 * var(--margin30));
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients-list__link {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .clients-list__item {
+    flex-basis: calc(33.3333333333% - var(--margin30));
+    margin-left: var(--margin30);
+    margin-bottom: var(--margin30);
+  }
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--margin30));
+    margin-bottom: calc(-1 * var(--margin30));
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-list__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-section {
+    padding-top: var(--padding94);
+    padding-bottom: var(--padding94);
+  }
+  .clients-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  .clients-list__link {
+    width: 170px;
+  }
+}
 .portfolio-section {
   padding-top: var(--padding94);
   padding-bottom: var(--padding94);

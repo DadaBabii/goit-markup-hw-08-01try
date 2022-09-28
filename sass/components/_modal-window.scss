@@ -3,10 +3,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height:609px;
     background-color: #FFFFFF;
     padding: 40px;
+    z-index: 100;
 
 }
 
@@ -33,5 +34,47 @@
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
     fill: var(--secondary-text-color);
+
+}
+
+
+@media screen and (min-width: 1200px) {
+.modal {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    // background-color: #FFFFFF;
+    // padding: 40px;
+
+}
+
+
+
+// .modal-close-button {
+//     position: absolute;
+//     right: 8px;
+//     top: 8px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 50%;
+//     background-color: transparent;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     padding: 0;
+//     transition: fill var(--time-transition) var(--line-transition);
+
+
+// }
+
+// .modal-close-button:hover .modal-close-icon,
+// .modal-close-button:focus .modal-close-icon {
+//     fill: var(--secondary-text-color);
+
+// }
 
 }

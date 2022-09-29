@@ -6,19 +6,27 @@
         margin-left: auto;
         margin-right: auto;
 
-        max-width: 480px;
+        width: 480px;
         height: 400px;
         background-color: #C4C4C4;
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/herophoto.jpg);
-        background-position: center;
-        background-size: cover;
+        url(../images/herophotom.jpg);
+        background-position: center top;
+        background-size: 480px 400px;
         text-align: center;
         }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .advertis-section {
+        background-image: url(../images/herophptom@2x.jpg);
+    }
+}
 
     .advertis-section__header {
+        
             width: 360px;
+           
             margin-top: 0;
             margin-left: auto;
             margin-right: auto;
@@ -76,20 +84,53 @@
 
 @media screen and (min-width: 768px) {
     .advertis-section {
-        max-width: 768px;
+        width: 768px;
+        height: 400px;
+
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/herophotot.jpg);
+                background-position: center top;
+                background-size: 768px 400px;
+                text-align: center;
+            }
+            
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .advertis-section {
+                    background-image: url(../images/herophotot@2x.jpg);
+                }
+            }
       
 
 }
 
-}
+
 
 @media screen and (min-width: 1200px) {
     .advertis-section {
-        max-width: 1200px;
+        max-width: 1600px;
+        width: auto;
         height: 600px;
         padding-top: 200px;
         padding-bottom: 200px;
-    }
+
+                
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url(../../images/herophoto.jpg);
+                    background-position: center top;
+                    background-size: 1600px 600px;
+                    text-align: center;
+                }
+                
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .advertis-section {
+                        background-image: url(../images/herophoto@2x.jpg);
+                    }
+                }
+   
 
     .advertis-section__header {
             width: 696px;

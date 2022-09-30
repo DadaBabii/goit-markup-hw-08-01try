@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 450px;
@@ -8,6 +8,7 @@
     background-color: #FFFFFF;
     padding: 40px;
     z-index: 100;
+    overflow: scroll;
 
 }
 
@@ -41,7 +42,7 @@
 @media screen and (min-width: 1200px) {
 .modal {
     // position: absolute;
-    // top: 50%;
+    top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%);
     width: 528px;

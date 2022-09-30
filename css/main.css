@@ -116,6 +116,7 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
+  overflow: auto;
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
@@ -132,7 +133,7 @@ a {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
@@ -140,6 +141,7 @@ a {
   background-color: #FFFFFF;
   padding: 40px;
   z-index: 100;
+  overflow: scroll;
 }
 
 .modal-close-button {
@@ -165,6 +167,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .modal {
+    top: 50%;
     width: 528px;
     height: 581px;
   }

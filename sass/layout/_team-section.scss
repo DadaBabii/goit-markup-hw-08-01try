@@ -1,8 +1,10 @@
 .team-section {
     padding-top: var(--padding-mobile);
     padding-bottom: var(--padding-mobile);
-
     background-color: var(--light-bcg-color);
+    min-width: 480px;
+    width: 100%;
+    
 }
 
 .team-list__item {

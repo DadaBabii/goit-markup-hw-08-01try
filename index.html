@@ -63,7 +63,7 @@
 
 <!-- Мобільне меню -->
 
-        <div class="mobile-menu is-open" data-menu>
+        <div class="mobile-menu" data-menu>
 
             <div class="container mobile-menu__container">
 
@@ -74,8 +74,8 @@
                 </button>
 
                 <ul class="mobile-menu-nav list">
-                    <li class="mobile-menu-nav_item"><a href="./portfolio.html" class="mobile-menu-nav__link">Студія</a></li>
-                    <li class="mobile-menu-nav_item"><a href="./index.html" class="mobile-menu-nav__link">Портфоліо</a></li>
+                    <li class="mobile-menu-nav_item"><a href="./index.html" class="mobile-menu-nav__link">Студія</a></li>
+                    <li class="mobile-menu-nav_item"><a href="./portfolio.html" class="mobile-menu-nav__link">Портфоліо</a></li>
                     <li class="mobile-menu-nav_item"><a href="#" class="mobile-menu-nav__link">Контакти</a></li>
                 </ul>
 
@@ -216,7 +216,18 @@
 
                     <li class="team-list__item card">
                             
-                            <img class="team-list__image" src="./images/img(i).jpg" alt="чоловік Ігор" width="270">
+
+                            <picture>
+                                
+                               
+                               
+                             
+                            <source srcset="./images/tp-1m.jpg 1x,./images/tp-1m@2x.jpg 2x" @media="(max-width:767px)"/>
+                            <source srcset="./images/tp-1d.jpg 1x,./images/tp-1d@2x.jpg 2x" @media="(min-width:1200px)"/>  
+                            <source srcset="./images/tp-1t.jpg 1x,./images/tp-1t@2x.jpg 2x" @media="(min-width:768px)"/>
+                            <img class="team-list__image" src="./images/tp-1m.jpg" alt="Чоловік Ігор">
+                            </picture>
+                            
                             
 
                         <div class="team-list__content">
@@ -262,7 +273,15 @@
                     
                     <li class="team-list__item card">
                             
-                            <img class="team-list__image" src="./images/img(o).jpg" alt="жінка Ольга" width="270">
+                            <picture>
+                                 <source srcset="./images/tp-2m.jpg 1x,./images/tp-2m@2x.jpg 2x" @media="(max-width:767px)"/>
+                                   <source srcset="./images/tp-2t.jpg 1x,./images/tp-2t@2x.jpg 2x" @media="(min-width:768px)"/>
+                                <source srcset="./images/tp-2d.jpg 1x,./images/tp-2d@2x.jpg 2x" @media="(min-width:1200px)"/>
+                         
+                           
+                                <img class="team-list__image" src="./images/tp-2m.jpg" alt="жінка Ольга">
+                            </picture>
+                            
                         
                        
                         <div class="team-list__content">
@@ -310,7 +329,14 @@
                                             
                     <li class="team-list__item card">
                             
-                            <img class="team-list__image" src="./images/img(n).jpg" alt="Чоловік Микола" width="270">
+                            <picture>
+                                <source srcset="./images/tp-3m.jpg 1x,./images/tp-3m@2x.jpg 2x" @media="(max-width:767px)" />
+                                 <source srcset="./images/tp-3t.jpg 1x,./images/tp-3t@2x.jpg 2x" @media="(min-width:768px)"/>        
+                                <source srcset="./images/tp-3d.jpg 1x,./images/tp-3d@2x.jpg 2x" @media="(min-width:1200px)"/>
+                                                   
+                               
+                            <img class="team-list__image" src="./images/tp-3m.jpg" alt="Чоловік Микола">
+                            </picture>
                         
                        
                         <div class="team-list__content">
@@ -355,8 +381,15 @@
                     </li>
                   
                     <li class="team-list__item card">
+                        <picture>
+                           <source srcset="./images/tp-4m.jpg 1x,./images/tp-4m@2x.jpg 2x" @media="(max-width:767px)"/> 
+                           <source srcset="./images/tp-4t.jpg 1x,./images/tp-4t@2x.jpg 2x" @media="(min-width:768px)"/>
+                            <source srcset="./images/tp-4d.jpg 1x,./images/tp-4d@2x.jpg 2x" @media="(min-width:1200px)"/>
+                         
                         
-                        <img class="team-list__image" src="./images/img(m).jpg" alt="чоловік Михайло" width="270">
+                            <img class="team-list__image" src="./images/tp-4m.jpg" alt="чоловік Михайло">
+                        </picture>
+                        
                             
                      
                         <div class="team-list__content">

@@ -27,8 +27,8 @@
                 </a>
     
                 <ul class="nav list">
-                    <li class="item"><a href="./index.html" class="nav__link straich">Студія</a></li>
-                    <li class="item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+                    <li class="item"><a href="./index.html" class="nav__link">Студія</a></li>
+                    <li class="item"><a href="./portfolio.html" class="nav__link straich">Портфоліо</a></li>
                     <li class="item"><a href="" class="nav__link">Контакти</a></li>
                 </ul>
             </nav>
@@ -76,9 +76,9 @@
                 </button>
     
                 <ul class="mobile-menu-nav list">
-                    <li class="mobile-menu-nav_item"><a href="./portfolio.html" class="mobile-menu-nav__link">Студія</a>
+                    <li class="mobile-menu-nav_item"><a href="./index.html" class="mobile-menu-nav__link">Студія</a>
                     </li>
-                    <li class="mobile-menu-nav_item"><a href="./index.html" class="mobile-menu-nav__link">Портфоліо</a></li>
+                    <li class="mobile-menu-nav_item"><a href="./portfolio.html" class="mobile-menu-nav__link">Портфоліо</a></li>
                     <li class="mobile-menu-nav_item"><a href="#" class="mobile-menu-nav__link">Контакти</a></li>
                 </ul>
     
@@ -135,7 +135,17 @@
 
                         <a href="#" class="galery-thumb">
                             <div class="galery-overlay">
-                                <img src="./images/img-portfolio/laptop.jpg" alt="Лаптоп" width="370">
+
+                                <picture>
+                                
+                                   
+                                    <source srcset="./images/laptop-d.jpg 1x, ./images/laptop-d@2x.jpg 2x" @media="(min-width: 1200px)"/> 
+                                     <source srcset="./images/laptop-t.jpg 1x, ./images/laptop-t@2x.jpg 2x" @media="(min-width: 768px)"/>
+                                    <source srcset="./images/laptop-m.jpg 1x, ./images/laptop-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                                    
+                                    <img class="team-list__image" src="./images/laptop-d.jpg" alt="Лаптоп">
+                                </picture>
+                                
                                 
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -154,7 +164,16 @@
 
                         <a href="#" class="galery-thumb">
                             <div class="galery-overlay">
-                            <img src="./images/img-portfolio/bascetbal.jpg" alt="гравці в баскетбол" width="370">
+
+                            <picture>
+                                <source srcset="./images/bascetbal-d.jpg 1x, ./images/bascetbal-d@2x.jpg 2x" @media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/bascetbal-t.jpg 1x, ./images/bascetbal-t@2x.jpg 2x" @media="(min-width: 768px)" />
+                                <source srcset="./images/bascetbal-m.jpg 1x, ./images/bascetbal-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                            
+                                <img class="team-list__image" src="./images/bascetbal-d.jpg" alt="гравці в баскетбол">
+                            </picture>
+                           
                             
                             <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати
@@ -176,7 +195,17 @@
 
                         <a href="#" class="galery-thumb">
                             <div class="galery-overlay">
-                            <img src="./images/img-portfolio/seafood.jpg" alt="намальована риба" width="370">
+                            <picture>
+                                <source srcset="./images/seafood-d.jpg 1x, ./images/seafood-d@2x.jpg 2x" @media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/seafood-t.jpg 1x, ./images/seafood-t@2x.jpg 2x" @media="(min-width: 768px)" />
+                                <source srcset="./images/seafood-m.jpg 1x, ./images/seafood-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                            
+                                <img class="team-list__image" src="./images/seafood-d.jpg" alt="намальована риба">
+                            </picture>
+                            
+                            
+                                
                             
                             <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати
@@ -199,7 +228,17 @@
                         <a href="#" class="galery-thumb">
 
                             <div class="galery-overlay">
-                            <img src="./images/img-portfolio/earphones.jpg" alt="навушники" width="370">
+                            
+                            <picture>
+                            <source srcset="./images/earphones-d.jpg 1x, ./images/earphones-d@2x.jpg 2x" @media="(min-width: 1200px)" />
+                            
+                            <source srcset="./images/earphones-t.jpg 1x, ./images/earphones-t@2x.jpg 2x" @media="(min-width: 768px)" />
+                            <source srcset="./images/earphones-m.jpg 1x, ./images/earphones-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                            
+                            <img class="team-list__image" src="./images/earphones-d.jpg" alt="намальована риба">
+                            </picture>
+                            
+                               
                             
                             <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати
@@ -222,8 +261,15 @@
                         <a href="#" class="galery-thumb">
 
                             <div class="galery-overlay">
+                            <picture>
+                                <source srcset="./images/boxes-d.jpg 1x, ./images/boxes-d@2x.jpg 2x" @media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/boxes-t.jpg 1x, ./images/boxes-t@2x.jpg 2x" @media="(min-width: 768px)" />
+                                <source srcset="./images/boxes-m.jpg 1x, ./images/boxes-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                            
+                                <img class="team-list__image" src="./images/boxes-d.jpg" alt="маленькі бокси">
+                            </picture>
 
-                            <img src="./images/img-portfolio/boxes.jpg" alt="коробки" width="370">
                             
                             <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати
@@ -247,8 +293,16 @@
                         <a href="#" class="galery-thumb">
 
                             <div class="galery-overlay">
+                            <picture>
+                                <source srcset="./images/dextop-d.jpg 1x, ./images/dextop-d@2x.jpg 2x" @media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/dextop-t.jpg 1x, ./images/dextop-t@2x.jpg 2x" @media="(min-width: 768px)" />
+                                <source srcset="./images/dextop-m.jpg 1x, ./images/dextop-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                            
+                                <img class="team-list__image" src="./images/dextop-d.jpg" alt="монітор">
+                            </picture>
 
-                            <img src="./images/img-portfolio/pc.jpg" alt="єкран комп'ютера" width="370">
+                           
                             
                             <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати
@@ -272,8 +326,18 @@
                         <a href="#" class="galery-thumb">
 
                             <div class="galery-overlay">
-                            <img src="./images/img-portfolio/book.jpg" alt="книга" width="370">
+
+                            <picture>
+                                <source srcset="./images/book-d.jpg 1x, ./images/book-d@2x.jpg 2x" @media="(min-width: 1200px)" />
                             
+                                <source srcset="./images/book-t.jpg 1x, ./images/book-t@2x.jpg 2x" @media="(min-width: 768px)" />
+                                <source srcset="./images/book-m.jpg 1x, ./images/book-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                            
+                                <img class="team-list__image" src="./images/book-d.jpg" alt="книга">
+                            </picture>
+
+
+                                                      
                             <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -295,7 +359,17 @@
                         <a href="#" class="galery-thumb">
 
                             <div class="galery-overlay">
-                            <img src="./images/img-portfolio/label.jpg" alt="Лейбл" width="370">
+
+                            <picture>
+                                <source srcset="./images/label-d.jpg 1x, ./images/label-d@2x.jpg 2x" @media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/label-t.jpg 1x, ./images/label-t@2x.jpg 2x" @media="(min-width: 768px)" />
+                                <source srcset="./images/label-m.jpg 1x, ./images/label-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                            
+                                <img class="team-list__image" src="./images/label-d.jpg" alt="Лейбл">
+                            </picture>
+
+
                             
                             <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати
@@ -319,7 +393,17 @@
                         <a href="#" class="galery-thumb">
 
                             <div class="galery-overlay">
-                            <img src="./images/img-portfolio/workinonlaptop.jpg" alt="Робота на комп'ютері" width="370">
+
+                            <picture>
+                                <source srcset="./images/workinonlaptop-d.jpg 1x, ./images/workinonlaptop-d@2x.jpg 2x" @media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/workinonlaptop-t.jpg 1x, ./images/workinonlaptop-t@2x.jpg 2x" @media="(min-width: 768px)" />
+                                <source srcset="./images/workinonlaptop-m.jpg 1x, ./images/workinonlaptop-m@2x.jpg 2x" @media="(max-width: 767px)" />
+                            
+                                <img class="team-list__image" src="./images/workinonlaptop-d.jpg" alt="Робота на комп'ютері">
+                            </picture>
+
+                           
                             
                             <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                                 відвідувачу отримати

@@ -26,7 +26,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-            min-width: 480px;
+            
                 width: 100%;
 
 
@@ -85,6 +85,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    overflow: scroll;
 }
 
 .mobile-menu__container {
@@ -118,7 +119,7 @@
 }
 
 .mobile-menu-nav {
-    margin-bottom: 302px;
+    margin-bottom: calc(302/480*100vw);
     justify-content: start;
 
 }
@@ -138,14 +139,14 @@
 }
 
 .mobile-menu-nav_item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: calc(32/480*100vw);
 }
 
 .lmobile-contacts-links__phone {
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: calc(32/480*100vw);
     font-weight: 500;
-    font-size: 34px;
+    font-size: calc(34/480*100vw);
     line-height: calc(40/34);
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
@@ -156,9 +157,9 @@
 .mobile-contacts-links__mail {
 
     display: block;
-    margin-bottom: 64px;
+    margin-bottom: calc(64/480*100vw);
     font-weight: 500;
-    font-size: 24px;
+    font-size: calc(24/480*100vw);
     line-height: calc(28/24);
     letter-spacing: 0.02em;
     color: var(--light-text-color);
@@ -171,7 +172,7 @@
  
 }
 .mobie-socials__item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: calc(10/480*100vw);
 
 
 &::after {
@@ -186,7 +187,7 @@
 
 .mobie-socials__link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: calc(18/480*100vw);
     line-height: calc(22/18);        
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);

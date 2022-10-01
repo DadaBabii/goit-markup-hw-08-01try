@@ -2,13 +2,13 @@
     padding-top: var(--padding-mobile);
     padding-bottom: var(--padding-mobile);
     background-color: var(--light-bcg-color);
-    min-width: 480px;
-    width: 100%;
+    
+    
     
 }
 
 .team-list__item {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: var(--margin30);
 
 }

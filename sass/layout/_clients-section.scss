@@ -4,7 +4,7 @@
 .clients-section {
     padding-top: var(--padding-mobile);
     padding-bottom: var(--padding-mobile);
-    min-width: 480px;
+    
     
 }
 
@@ -76,6 +76,7 @@
         flex-wrap: wrap;
         margin-left: calc(-1 * var(--margin30));
         margin-bottom: calc(-1 * var(--margin30));
+        justify-content: center;
     }
 
 }

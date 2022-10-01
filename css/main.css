@@ -893,6 +893,13 @@ a {
     height: 14px;
     transition: fill var(--time-transition) var(--line-transition);
   }
+  .link__icon.mobile {
+    margin-right: 10px;
+    fill: var(--light-text-color);
+    width: 14px;
+    height: 10px;
+    transition: fill var(--time-transition) var(--line-transition);
+  }
   .link:hover .link__icon,
 .link:focus .link__icon {
     fill: var(--secondary-text-color);
@@ -950,6 +957,15 @@ a {
   .link__icon {
     margin-right: 10px;
     fill: var(--light-text-color);
+    width: 16px;
+    height: 12px;
+    transition: fill var(--time-transition) var(--line-transition);
+  }
+  .link__icon.mobile {
+    margin-right: 10px;
+    fill: var(--light-text-color);
+    width: 10px;
+    height: 16px;
     transition: fill var(--time-transition) var(--line-transition);
   }
   .link:hover .link__icon,
@@ -979,7 +995,7 @@ a {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advertis-section {
-    background-image: url(../images/herophptom@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herophptom@2x.jpg);
   }
 }
 .advertis-section__header {
@@ -1025,7 +1041,6 @@ a {
   .advertis-section {
     width: 768px;
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herophotot.jpg);
     background-position: center top;
     background-size: 768px 400px;
     text-align: center;
@@ -1033,7 +1048,7 @@ a {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .advertis-section {
-    background-image: url(../images/herophotot@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herophotot@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1051,7 +1066,7 @@ a {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .advertis-section {
-    background-image: url(../images/herophoto@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/../images/herophoto@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {

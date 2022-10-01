@@ -20,9 +20,12 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .advertis-section {
-        background-image: url(../images/herophptom@2x.jpg);
+         
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herophptom@2x.jpg);
     }
 }
+
+
 
     .advertis-section__header {
         
@@ -88,8 +91,7 @@
         width: 768px;
         height: 400px;
 
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../images/herophotot.jpg);
+            
                 background-position: center top;
                 background-size: 768px 400px;
                 text-align: center;
@@ -99,7 +101,9 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 .advertis-section {
-                    background-image: url(../images/herophotot@2x.jpg);
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                            url(../images/herophotot@2x.jpg);
+                    
                 }
             }
       
@@ -128,7 +132,9 @@
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     .advertis-section {
-                        background-image: url(../images/herophoto@2x.jpg);
+                        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                                url(../images/../images/herophoto@2x.jpg);
+                        
                     }
                 }
    

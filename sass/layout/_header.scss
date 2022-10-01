@@ -143,6 +143,16 @@
     transition: fill var(--time-transition) var(--line-transition);
 
 }
+.link__icon.mobile {
+
+    margin-right: 10px;
+    fill: var(--light-text-color);
+    width: 14px;
+    height: 10px;
+
+    transition: fill var(--time-transition) var(--line-transition);
+
+}
 
 .link:hover .link__icon,
 .link:focus .link__icon {
@@ -233,10 +243,24 @@
 
     margin-right: 10px;
     fill: var(--light-text-color);
+    width: 16px;
+    height: 12px;
 
     transition: fill var(--time-transition) var(--line-transition);
 
 }
+
+.link__icon.mobile {
+
+    margin-right: 10px;
+    fill: var(--light-text-color);
+    width: 10px;
+    height: 16px;
+
+    transition: fill var(--time-transition) var(--line-transition);
+
+}
+
 
 .link:hover .link__icon,
 .link:focus .link__icon {
